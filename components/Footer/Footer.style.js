@@ -14,6 +14,7 @@ const classes = {
     flex flex-col
     gap-4
     items-center lg:items-start
+    text-center lg:text-left
     justify-start
   `,
   detailsContainer: `
