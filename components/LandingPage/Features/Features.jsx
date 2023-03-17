@@ -13,15 +13,16 @@ const Features = () => {
       <div className={classes.wrapper}>
         <div className={classes.lhs}>
           <h1 className={classes.title}>
-            <span>Scaling Carbon Markets with Tokenized</span> <span className={classes.accent}>Carbon Credits</span>
+            <span>Scaling Carbon Markets with Tokenized</span>{" "}
+            <span className={classes.accent}>Carbon Credits</span>
           </h1>
           <p className={classes.textMobile}>
             Tokenized carbon credits can solve a key market problem, which also
             enables carbon markets to scale quickly beyond their current
             constraints.
           </p>
-          <Image className={classes.img1} src={carbonOffset} />
-          <Image className={classes.img2} src={carbonOffsetMobile} />
+          <Image className={classes.img1} src={carbonOffset} alt="" />
+          <Image className={classes.img2} src={carbonOffsetMobile} alt="" />
         </div>
         <div className={classes.rhs}>
           <p className={classes.text}>
