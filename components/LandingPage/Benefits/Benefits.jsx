@@ -2,7 +2,7 @@ import Tag from "../Tag/Tag";
 import BenefitCard from "./BenefitCard";
 import { benefits } from "./Benefits.script";
 import classes from "./Benefits.style";
-import carbonOffset from "../../../assets/carbon-Offset-1.png";
+import carbonOffset from "../../../assets/carbon-offset-1.png";
 import Image from "next/image";
 
 const Benefits = () => {
