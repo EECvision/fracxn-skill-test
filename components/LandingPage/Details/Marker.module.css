@@ -1,0 +1,86 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.container {
+  border: 1px solid #394454;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2em;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+  background: linear-gradient(253.13deg, rgba(55, 242, 173, 0.5) -36.93%, rgba(55, 152, 242, 0.5) 148.87%);
+}
+
+.wrapper.active .container {
+  background: linear-gradient(253.13deg, rgb(55, 242, 173) -36.93%, rgba(55, 152, 242, 0.975) 148.87%);
+}
+
+.wrapper.complete .container {
+  background: linear-gradient(253.13deg, rgba(55, 152, 242, 0.5) -36.93%, rgba(55, 242, 173, 0.5) 148.87%);
+}
+
+.innerContainer {
+  background: #394454;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.wrapper.active .innerContainer {
+  background: #323256;
+  animation: blink 850ms infinite;
+}
+
+@keyframes blink {
+  from {
+    box-shadow: 0px 0px 0px 6px #32325694;
+  }
+
+  to {
+    box-shadow: 0px 0px 0px 0px #323256;
+  }
+}
+
+.wrapper.complete .innerContainer {
+  background: white;
+}
+
+.line.draw {
+  background: #394454;
+}
+
+.line {
+  width: auto;
+  flex: 1;
+  height: 100%;
+  background: transparent;
+}
+
+.innerLine {
+  width: 4px;
+}
+
+.wrapper.active .draw .innerLine,
+.wrapper.complete .innerLine {
+  background: #455265;
+  animation: flow 300ms forwards;
+}
+
+@keyframes flow {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 100%;
+  }
+}
