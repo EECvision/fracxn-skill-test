@@ -45,7 +45,7 @@ const Paginate = ({ items, countPerPage = 6, renderItem }) => {
       endIndex = startIndex + countPerPage;
     }
     handleSetState({ paginate });
-  }, [items]);
+  }, [items, countPerPage]);
 
   return (
     <>

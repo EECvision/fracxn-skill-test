@@ -40,7 +40,7 @@ const Features = () => {
             </p>
             <div className={classes.featuresList}>
               {features.map((data, index) => (
-                <FadeAnimation width={"100%"}>
+                <FadeAnimation key={index} width={"100%"}>
                   <FeatureCard key={index} data={data} />
                 </FadeAnimation>
               ))}

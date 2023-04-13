@@ -23,7 +23,7 @@ const BlogPosts = () => {
           countPerPage={6}
           renderItem={(blogPosts) =>
             blogPosts.map((data, index) => (
-              <FadeAnimation>
+              <FadeAnimation key={index}>
                 <BlogPostCard key={index} data={data} />
               </FadeAnimation>
             ))

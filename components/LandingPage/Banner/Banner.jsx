@@ -36,7 +36,7 @@ const Banner = () => {
           <Token className={`${classes.token} ${classes.token2}`} />
           <Token className={`${classes.token} ${classes.token3}`} />
         </div>
-        <Image className={classes.robotArm} src={robotArm} />
+        <Image className={classes.robotArm} src={robotArm} alt="" />
       </div>
     </div>
   );

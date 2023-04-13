@@ -18,7 +18,7 @@ const FadeAnimation = ({ children, width, offset = 150, style }) => {
         }
       } catch (error) {}
     });
-  }, []);
+  }, [offset]);
 
   return (
     <div

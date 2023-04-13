@@ -26,7 +26,7 @@ const Benefits = () => {
         </div>
         <div className={classes.benefitsList}>
           {benefits.map((data, index) => (
-            <FadeAnimation width={"100%"}>
+            <FadeAnimation key={index} width={"100%"}>
               <BenefitCard key={index} data={data} />
             </FadeAnimation>
           ))}

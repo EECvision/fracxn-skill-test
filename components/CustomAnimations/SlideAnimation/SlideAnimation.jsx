@@ -18,7 +18,7 @@ const SlideAnimation = ({ children, width, offset = 150 }) => {
         }
       } catch (error) {}
     });
-  }, []);
+  }, [offset]);
 
   return (
     <div
