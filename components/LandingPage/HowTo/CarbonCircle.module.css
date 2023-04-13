@@ -219,3 +219,23 @@
     left: -60%;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .outerCircle {
+    width: 30vmax;
+    height: 30vmax;
+  }
+
+  .innerCircle {
+    width: 20vmax;
+    height: 20vmax;
+  }
+
+  .buyer {
+    right: -30%;
+  }
+
+  .supplier {
+    left: -30%;
+  }
+}
