@@ -1,12 +1,9 @@
-import classes from "./Tag.style";
+import classes from "./Tag.module.css";
 
-const Tag = ({ children, transparent }) => {
+const Tag = ({ children }) => {
   return (
-    <div
-      style={{ background: transparent ? "transparent" : "", color: "#37f2ade1" }}
-      className={classes.container}
-    >
-      {children}
+    <div className={classes.container}>
+      <div className={classes.text}>{children}</div>
     </div>
   );
 };

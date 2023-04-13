@@ -1,0 +1,81 @@
+.container {
+  width: 100%;
+  background: var(--bg-accent);
+  transform: rotate(1deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6em;
+}
+
+.wrapper {
+  width: 120%;
+  background: #101F35;
+  transform: rotate(-1deg);
+}
+
+.innerWrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6em;
+  overflow: hidden;
+}
+
+.animationContainer {
+  width: max-content;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6em;
+  padding: 2em 0;
+  animation: move 20s infinite linear;
+  flex: 0 0 auto;
+}
+
+.innerWrapper:hover .animationContainer {
+  animation-play-state: paused;
+}
+
+.listItem {
+  cursor: pointer;
+  width: 100%;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - 6em));
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .animationContainer {
+    padding: 1em 0;
+    gap: 4em;
+  }
+
+  @keyframes move {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(calc(-100% - 4em));
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 4em 0;
+  }
+}

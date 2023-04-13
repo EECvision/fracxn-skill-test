@@ -1,4 +1,4 @@
-import classes from "./DetailCard.style";
+import classes from "./DetailCard.module.css";
 import Marker from "./Marker";
 
 const DetailCard = ({ data, withLine, setIsActive, isActive, index }) => {
@@ -11,10 +11,12 @@ const DetailCard = ({ data, withLine, setIsActive, isActive, index }) => {
         index={index}
       />
       <div className={classes.wrapper}>
-        <div onClick={() => setIsActive(index)} className={classes.title}>
-          {data.title}
-        </div>
-        <div className={classes.description(index === isActive)}>
+        <div className={classes.title}>{data.title}</div>
+        <div
+          className={`${classes.description} ${
+            index === isActive && classes.active
+          }`}
+        >
           {data.description}
         </div>
       </div>

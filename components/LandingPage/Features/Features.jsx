@@ -1,41 +1,52 @@
 import Tag from "../Tag/Tag";
 import FeatureCard from "./FeatureCard";
 import { features } from "./Features.script";
-import classes from "./Features.style";
+import classes from "./Features.module.css";
 import carbonOffset from "../../../assets/carbon-offset.png";
 import carbonOffsetMobile from "../../../assets/carbon-offset-mobile.png";
 import Image from "next/image";
+import FadeAnimation from "../../CustomAnimations/FadeAnimation/FadeAnimation";
 
 const Features = () => {
   return (
     <div className={classes.container}>
-      <Tag>WHY WORK WITH US?</Tag>
+      <FadeAnimation>
+        <Tag>WHY WORK WITH US?</Tag>
+      </FadeAnimation>
       <div className={classes.wrapper}>
-        <div className={classes.lhs}>
-          <h1 className={classes.title}>
-            <span>Scaling Carbon Markets with Tokenized</span>{" "}
-            <span className={classes.accent}>Carbon Credits</span>
-          </h1>
-          <p className={classes.textMobile}>
-            Tokenized carbon credits can solve a key market problem, which also
-            enables carbon markets to scale quickly beyond their current
-            constraints.
-          </p>
-          <Image className={classes.img1} src={carbonOffset} alt="" />
-          <Image className={classes.img2} src={carbonOffsetMobile} alt="" />
-        </div>
-        <div className={classes.rhs}>
-          <p className={classes.text}>
-            Tokenized carbon credits can solve a key market problem, which also
-            enables carbon markets to scale quickly beyond their current
-            constraints.
-          </p>
-          <div className={classes.featuresList}>
-            {features.map((data, index) => (
-              <FeatureCard key={index} data={data} />
-            ))}
+        <FadeAnimation>
+          <div className={classes.lhs}>
+            <h1 className={classes.title}>
+              <span>Scaling Carbon Markets with Tokenized</span>{" "}
+              <span className={classes.accent}>Carbon Credits</span>
+            </h1>
+            <p className={`${classes.text} ${classes.mobile}`}>
+              Tokenized carbon credits can solve a key market problem, which
+              also enables carbon markets to scale quickly beyond their current
+              constraints.
+            </p>
+            <FadeAnimation>
+              <Image className={classes.img1} src={carbonOffset} alt="" />
+              <Image className={classes.img2} src={carbonOffsetMobile} alt="" />
+            </FadeAnimation>
           </div>
-        </div>
+        </FadeAnimation>
+        <FadeAnimation>
+          <div className={classes.rhs}>
+            <p className={`${classes.text}`}>
+              Tokenized carbon credits can solve a key market problem, which
+              also enables carbon markets to scale quickly beyond their current
+              constraints.
+            </p>
+            <div className={classes.featuresList}>
+              {features.map((data, index) => (
+                <FadeAnimation width={"100%"}>
+                  <FeatureCard key={index} data={data} />
+                </FadeAnimation>
+              ))}
+            </div>
+          </div>
+        </FadeAnimation>
       </div>
     </div>
   );

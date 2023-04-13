@@ -2,14 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --main: #071529;
+  --main-dark: #050F1D;
+  --bg-accent: #35E5A4;
+  --card: #162C4B;
+  --card-dark: #394454;
+  --card-light: #394454;
+  --faint: #B2B6BD;
+  --faint-dark: #78787A;
+  --line: #394454;
+  --grad-1: rgba(55, 242, 173, 0.5);
+  --grad-2: rgba(55, 152, 242, 0.5);
+}
+
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background: #071529;
-    color: white;
+  background: #071529;
+  color: white;
+  overflow-x: hidden;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: all 300ms !important;
 }
 
 a {

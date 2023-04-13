@@ -38,7 +38,7 @@ const classes = {
     gap-4
   `,
   form: `
-    w-full lg:w-auto
+    w-auto lg:w-auto
   `,
   inputContainer: `
     flex 
@@ -49,7 +49,9 @@ const classes = {
     gap-2
   `,
   input: `
-    bg-main
+    bg-transparent
+    border border-none 
+    outline-none
   `,
   title: `
     text-xl
@@ -77,7 +79,7 @@ const classes = {
   bText: `
     font-bold
     text-2xl
-  `
+  `,
 };
 
 export default classes;

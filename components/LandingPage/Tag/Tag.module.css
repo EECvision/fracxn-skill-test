@@ -1,0 +1,31 @@
+  .container {
+    width: max-content;
+    padding: 1em;
+    background: #394454;
+    border-radius: 12px;
+    padding: 6px 8px;
+  }
+
+  .text {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    /* stroke gradient */
+
+    background: linear-gradient(100.46deg, #37F2AD 12.56%, rgba(64, 226, 207, 0.47) 112.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  @media screen and (max-width: 768px) {
+    .text {
+      font-size: 10px;
+      line-height: 13px;
+    }
+  }

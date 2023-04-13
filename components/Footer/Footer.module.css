@@ -1,0 +1,192 @@
+.container {
+  width: 100%;
+  background: #050F1D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tSide {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6vw;
+  padding: 4em 2em;
+}
+
+.logoWrapper {
+  width: auto;
+  max-width: 20em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+.logoText {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 32px;
+}
+
+.detailsContainer {
+  width: max-content;
+  display: flex;
+  flex-grow: 1;
+  gap: 4vw;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo {
+  width: 255px;
+  height: 32px;
+}
+
+.socialMediaLinks {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+.form {
+  width: auto;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5em;
+  border-radius: 0.375em;
+  gap: 0.5em;
+}
+
+.input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.detailsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 25px;
+  margin-bottom: 1em;
+}
+
+.list {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+  cursor: pointer;
+  transition: color 300ms;
+}
+
+.base {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0;
+  gap: 0.5em;
+  border-top: 0.125em solid #d8d8d8;
+}
+
+.baseText {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 15px;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.list:hover {
+  color: #37F2AD;
+}
+
+.bText {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 25px;
+}
+
+@media screen and (max-width: 1280px) {
+  .tSide {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 832px) {
+  .tSide {
+    justify-content: center;
+  }
+
+  .logoWrapper {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tSide {
+    padding: 4em 1em;
+    gap: 4em;
+  }
+
+  .logo {
+    width: 172px;
+    height: 24px;
+  }
+
+  .detailsContainer {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2em;
+  }
+
+  .logoText,
+  .title {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 18px;
+  }
+
+  .list {
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 95px;
+    height: 16px;
+  }
+}

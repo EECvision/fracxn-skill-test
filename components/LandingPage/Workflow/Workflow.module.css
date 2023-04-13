@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2em;
+  padding: 0 2em;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 2.5vmax;
+  line-height: 4.5vmax;
+}
+
+.accent {
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+.image {
+  width: 100%;
+}
+
+.image.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-bottom: 6em;
+  }
+
+  .title {
+    margin-bottom: 2em;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .image.mobile {
+    display: block;
+  }
+}
