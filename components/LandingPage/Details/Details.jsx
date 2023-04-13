@@ -3,6 +3,7 @@ import DetailCard from "./DetailCard";
 import { details } from "./Details.script";
 import classes from "./Details.module.css";
 import hexagon from "../../../assets/hexagon.png";
+import emptyHexagon from "../../../assets/hexagon-empty.png";
 import Image from "next/image";
 import FadeAnimation from "../../CustomAnimations/FadeAnimation/FadeAnimation";
 
@@ -39,6 +40,9 @@ const Details = () => {
           <Image className={classes.image} src={hexagon} alt="" />
         </FadeAnimation>
       </div>
+
+      <Image className={classes.image_1} src={emptyHexagon} alt="" />
+      <Image className={classes.image_2} src={emptyHexagon} alt="" />
     </div>
   );
 };
