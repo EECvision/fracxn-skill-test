@@ -33,6 +33,15 @@
   line-height: 32px;
 }
 
+.socialIcon {
+  transition: all 300ms;
+  cursor: pointer;
+}
+
+.socialIcon:hover {
+  transform: scale(1.1);
+}
+
 .detailsContainer {
   width: max-content;
   display: flex;
@@ -97,6 +106,10 @@
   transition: color 300ms;
 }
 
+.list:hover {
+  color: #37F2AD;
+}
+
 .base {
   width: 100%;
   display: flex;
@@ -105,7 +118,7 @@
   justify-content: center;
   padding: 2em 0;
   gap: 0.5em;
-  border-top: 0.125em solid #d8d8d8;
+  border-top: 0.125em solid var(--color-accent);
 }
 
 .baseText {
@@ -121,8 +134,8 @@
   gap: 0.5em;
 }
 
-.list:hover {
-  color: #37F2AD;
+.company svg {
+  margin-bottom: 4px;
 }
 
 .bText {

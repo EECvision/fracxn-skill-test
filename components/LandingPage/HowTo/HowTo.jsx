@@ -3,6 +3,8 @@ import FadeAnimation from "../../CustomAnimations/FadeAnimation/FadeAnimation";
 import CarbonCircle from "./CarbonCircle";
 import { useState } from "react";
 import { toSentenceCase } from "../../../utils";
+import BuyerInfo from "./BuyerInfo";
+import SupplierInfo from "./SupplierInfo";
 
 const HowTo = () => {
   const [isActive, setIsActive] = useState("supplier");
@@ -15,7 +17,6 @@ const HowTo = () => {
             {["supplier", "buyer"].map((item, idx) => (
               <div
                 key={idx}
-                isActive={isActive}
                 onClick={() => setIsActive(item)}
                 className={`${classes.actionBtn} ${
                   item === isActive && classes.active
@@ -25,17 +26,7 @@ const HowTo = () => {
               </div>
             ))}
           </div>
-          <h1 className={classes.title}>
-            <span>How to make your</span>{" "}
-            <span className={classes.accent}>carbon credits</span> <br />
-            <span>worth more</span>
-          </h1>
-          <p className={classes.description}>
-            Bring your carbon projects on-chain into the Open Climate Registry
-            to increase value and transparency, discover new sales channels, and
-            improve project value.
-          </p>
-          <button className={classes.btn}>Learn more</button>
+          {isActive === "buyer" ? <BuyerInfo /> : <SupplierInfo />}
         </div>
         <div className={classes.rhs}>
           <CarbonCircle isActive={isActive} />

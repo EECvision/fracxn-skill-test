@@ -27,6 +27,15 @@ const Verification = () => {
         </div>
         <div className={classes.rhs}>
           <Image className={classes.image} src={audit} alt="" />
+          <div className={`${classes.tag} ${classes.tag1}`}>
+            Verification & Audit
+          </div>
+          <div className={`${classes.tag} ${classes.tag2}`}>
+            Periodic checks
+          </div>
+          <div className={`${classes.tag} ${classes.tag3}`}>
+            Proof of Carbon Credit
+          </div>
         </div>
       </div>
     </FadeAnimation>

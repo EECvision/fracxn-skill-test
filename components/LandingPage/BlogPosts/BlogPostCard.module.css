@@ -5,6 +5,14 @@
   box-shadow: 0px 0px 4px #37F2AD;
 }
 
+.container .title svg {
+  transition: transform 300ms;
+}
+
+.container:hover .title svg {
+  transform: translate(10%, -10%);
+}
+
 .imageContainer {
   overflow: hidden;
 }

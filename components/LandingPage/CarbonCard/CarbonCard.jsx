@@ -33,7 +33,7 @@ const CardbonCard = () => {
             {list.map((item, index) => (
               <div key={index} className={classes.item}>
                 <Check />
-                <div>{item}</div>
+                <div className={classes.text}>{item}</div>
               </div>
             ))}
           </div>

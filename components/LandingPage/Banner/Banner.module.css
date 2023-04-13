@@ -25,7 +25,7 @@
 }
 
 .accent {
-  color: #6b7280;
+  color: var(--color-accent);
 }
 
 .description {
@@ -45,6 +45,19 @@
   padding: 12px 16px;
   background: linear-gradient(253.13deg, rgba(55, 242, 173, 0.5) -36.93%, rgba(55, 152, 242, 0.5) 148.87%);
   border-radius: 8px;
+  transition: background 300ms;
+}
+
+.btn:hover {
+  background: linear-gradient(253.13deg, rgba(55, 152, 242, 0.5) -36.93%, rgba(55, 242, 173, 0.5) 148.87%);
+}
+
+.btn svg {
+  transition: transform 300ms;
+}
+
+.btn:hover svg {
+  transform: translateX(20%);
 }
 
 .demo {
@@ -57,6 +70,7 @@
   animation-name: bounce;
   animation-duration: 1650ms;
   animation-fill-mode: both;
+  animation-delay: 1300ms;
 }
 
 .card {
@@ -65,6 +79,7 @@
 
 @keyframes bounce {
   0% {
+    opacity: 0;
     transform: translateY(-10%);
     animation-timing-function: ease-out;
   }
@@ -80,6 +95,7 @@
   }
 
   100% {
+    opacity: 1;
     transform: translateY(0%);
     animation-timing-function: ease-in;
   }
@@ -87,7 +103,7 @@
 
 .robotArm {
   transform: translateX(16em);
-  animation: slideIn 650ms forwards;
+  animation: slideIn 1300ms forwards;
   width: 80%;
 }
 

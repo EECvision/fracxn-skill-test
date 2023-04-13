@@ -23,6 +23,16 @@
 .item {
   display: flex;
   gap: 8px;
+  align-items: center;
+  justify-self: unset;
+  justify-content: flex-start;
+}
+
+.text {
+  flex: 1;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
 }
 
 .lhs {
@@ -86,6 +96,10 @@
   .container {
     gap: 2em;
   }
+
+  .text {
+    font-size: 0.875rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -97,6 +111,15 @@
 
   .lhs {
     width: 80%;
+  }
+
+  .item svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .text {
+    font-size: 0.625rem;
   }
 
 }

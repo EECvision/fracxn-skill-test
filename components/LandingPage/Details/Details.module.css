@@ -33,7 +33,7 @@
 }
 
 .accent {
-  color: #6b7280;
+  color: var(--color-accent);
   white-space: nowrap;
 }
 

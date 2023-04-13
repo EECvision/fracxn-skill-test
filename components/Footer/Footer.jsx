@@ -21,7 +21,9 @@ const Footer = () => {
           </div>
           <div className={classes.socialMediaLinks}>
             {socialMediaConnections.map((socialLink, index) => (
-              <div key={index}>{socialLink.icon}</div>
+              <div className={classes.socialIcon} key={index}>
+                {socialLink.icon}
+              </div>
             ))}
           </div>
         </div>

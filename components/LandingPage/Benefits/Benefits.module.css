@@ -52,6 +52,7 @@
 
 .accent {
   white-space: nowrap;
+  color: var(--color-accent);
 }
 
 .benefitsList {
