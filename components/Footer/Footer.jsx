@@ -1,4 +1,4 @@
-import classes from "./Footer.style";
+import classes from "./Footer.module.css";
 import Logo from "../../assets/logo.svg";
 import {
   companys,
@@ -16,10 +16,14 @@ const Footer = () => {
       <div className={classes.tSide}>
         <div className={classes.logoWrapper}>
           <Logo className={classes.logo} />
-          <div>Blockchain, based company to offset carbon emission</div>
+          <div className={classes.logoText}>
+            Blockchain, based company to offset carbon emission
+          </div>
           <div className={classes.socialMediaLinks}>
             {socialMediaConnections.map((socialLink, index) => (
-              <div key={index}>{socialLink.icon}</div>
+              <div className={classes.socialIcon} key={index}>
+                {socialLink.icon}
+              </div>
             ))}
           </div>
         </div>
@@ -66,7 +70,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={classes.base}>
-        <div>Copyright 2022 carbonbank.io</div>
+        <div className={classes.baseText}>Copyright 2022 carbonbank.io</div>
         <div className={classes.company}>
           <div style={{ color: "#999999" }} className={classes.bText}>
             POWERED BY

@@ -1,4 +1,4 @@
-import classes from "./FeatureCard.style";
+import classes from "./FeatureCard.module.css";
 
 const FeatureCard = ({ data }) => {
   return (

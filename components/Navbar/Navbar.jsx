@@ -1,5 +1,6 @@
-import classes from "./Navbar.style";
 import Logo from "../../assets/logo.svg";
+// import styles from "./Navbar.styles";
+import classes from "./Navbar.module.css";
 import HamburgerIcon from "../../assets/icon-hamburger.svg";
 
 const Navbar = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
           <div className={classes.navItem}>Contact Us</div>
         </nav>
         <div className={classes.lunchBtn}>Launch App</div>
-        <HamburgerIcon className={classes.toggleIcon}/>
+        <HamburgerIcon className={classes.toggleIcon} />
       </div>
     </div>
   );
